@@ -1,5 +1,5 @@
+// Developed by Soham Dugade 24101A0037 INFT-A
 "use client"
-
 import { useState, useEffect, useCallback } from "react"
 import Link from "next/link"
 import { useSearchParams } from "next/navigation"
@@ -20,7 +20,7 @@ export function ClutchApp() {
   const [rightPanelOpen, setRightPanelOpen] = useState(true)
   const [mobilePanel, setMobilePanel] = useState<"input" | "graph" | "solution">("graph")
 
-  // Load demo data
+  // Loading the demo data.
   useEffect(() => {
     if (isDemo) {
       const demoX = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
