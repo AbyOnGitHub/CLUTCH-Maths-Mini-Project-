@@ -1,6 +1,6 @@
+//Developed by Soham Dugade 24101A0037 INFT-A
 @import 'tailwindcss';
 @import 'tw-animate-css';
-
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -118,8 +118,8 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-  }
+  }  
   body {
-    @apply bg-background text-foreground;
+      @apply bg-background text-foreground;
   }
 }
