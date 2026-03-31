@@ -61,7 +61,7 @@ export function ScatterPlot({ xValues, yValues, regressionLine }: ScatterPlotPro
 
   if (xValues.length === 0) {
     return (
-      <div className="w-full h-full flex items-center justify-center">
+      <div className="w-full h-full min-h-[300px] flex items-center justify-center">
         <div className="text-center">
           <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
             <svg
@@ -88,7 +88,8 @@ export function ScatterPlot({ xValues, yValues, regressionLine }: ScatterPlotPro
   }
 
   return (
-    <ResponsiveContainer width="100%" height="100%">
+    <div className="w-full h-full min-h-[300px]">
+    <ResponsiveContainer width="100%" height="100%" minHeight={300}>
       <ScatterChart margin={{ top: 20, right: 30, left: 10, bottom: 30 }}>
         <defs>
           <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
@@ -198,5 +199,6 @@ export function ScatterPlot({ xValues, yValues, regressionLine }: ScatterPlotPro
         />
       </ScatterChart>
     </ResponsiveContainer>
+    </div>
   )
 }
