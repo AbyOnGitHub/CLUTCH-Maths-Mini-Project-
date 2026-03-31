@@ -1,5 +1,5 @@
+//Developed by Soham Dugade 24101A0037 INFT-A
 "use client"
-
 import { useMemo, useEffect } from "react"
 import { Calculator, TrendingUp, Activity, Lightbulb, ChevronRight, BarChart3 } from "lucide-react"
 import { ScrollArea } from "@/components/ui/scroll-area"
