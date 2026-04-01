@@ -1,5 +1,5 @@
 "use client"
-
+//Developed by shaikh Abdul Hakim
 import { useState, useEffect, useRef, useCallback } from "react"
 import { Button } from "@/components/ui/button"
 import { Play, Pause, RotateCcw, ChevronLeft, ChevronRight, Volume2, VolumeX, Maximize2 } from "lucide-react"
