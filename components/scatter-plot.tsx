@@ -1,5 +1,8 @@
 "use client"
 //Developed by shaikh Abdul Hakim
+
+
+
 import { useMemo } from "react"
 import {
   ScatterChart,
@@ -89,6 +92,9 @@ export function ScatterPlot({ xValues, yValues, regressionLine }: ScatterPlotPro
 
   return (
     <div className="w-full h-full min-h-[300px]">
+    <h2 className="text-lg font-semibold mb-2">
+    Scatter Plot Visualization
+    </h2>
     <ResponsiveContainer width="100%" height="100%" minHeight={300}>
       <ScatterChart margin={{ top: 20, right: 30, left: 10, bottom: 30 }}>
         <defs>
