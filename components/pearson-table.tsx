@@ -225,6 +225,9 @@ export function PearsonTable({ xValues, yValues }: PearsonTableProps) {
             <div>
               <span className="text-muted-foreground">Step 2 (Deviations): </span>
               <span className="text-foreground">{theoryContent[theoryMode].step2}</span>
+              <p className="text-sm text-gray-400">
+                This step helps understand how deviations are calculated.
+              </p>
             </div>
             <div>
               <span className="text-muted-foreground">Step 3 (Products): </span>
